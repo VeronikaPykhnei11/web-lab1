@@ -6,17 +6,18 @@
     <link href="../resources/css/main-page.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/checkIfLogged.js"></script>
 </head>
 <body>
     <div class="root">
         <header>
-            <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk" class="logo-wrapper">
-                <img src="../resources/images/logo.png" class="logo"/>
-            </a>
+            <p class="logo-wrapper">
+                <img src="../resources/images/logo.png" onclick="checkIfLoggedLogo()" class="logo"/>
+            </p>
             <div class="header-wrapper">
                 <ul class="nav-menu-wrapper">
                     <li>
-                        <a href="/web-lab1/pages/schedule-page.html?_ijt=2mvpf55j8f4r7fr1k0ub2hl8hf">
+                        <a href="/web-lab1/frontend/pages/schedule-page.html?">
                             Schedule
                         </a>
                     </li>
@@ -35,11 +36,11 @@
                     </div>
                     <div class="user-wrapper">
                         <img src="../resources/images/user-icon.svg" class="user-icon"/>
-                        <a href="/web-lab1/pages/login-page.html?_ijt=m0ntma55e8ejdi8t2gaug0clck" class="user-icon-wrapper">
+                        <a href="/web-lab1/frontend/pages/login-page.html" class="user-icon-wrapper">
                             Sign in
                         </a>
                         <div class="line-header"></div>
-                        <a href="/web-lab1/pages/register-page.html?_ijt=m0ntma55e8ejdi8t2gaug0clck" class="user-icon-wrapper">
+                        <a href="/web-lab1/frontend/pages/register-page.html" class="user-icon-wrapper">
                             Sign up
                         </a>
                     </div>

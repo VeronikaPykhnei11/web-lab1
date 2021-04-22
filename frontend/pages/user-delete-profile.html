@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <title>Cinema-Service</title>
     <link href="../resources/css/user-delete-profile.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../scripts/requests.js"></script>
 </head>
 <body>
 <div class="root">
-    <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk">
-        <img src="../resources/images/logo.png" class="logo"/>
-    </a>
+    <p class="logo-wrapper">
+        <img src="../resources/images/logo.png" onclick="checkIfLoggedLogo()" class="logo"/>
+    </p>
     <div class="user-profile-wrapper">
         <h2>Are you sure?</h2>
         <div class="divider"></div>
         <div class="user-info-wrapper">
-            <a href="/web-lab1/pages/user-profile.html?_ijt=bs3pnsodrr3p026j9emh9fc8ph"><button>Delete</button></a>
-            <a href="/web-lab1/pages/user-profile.html?_ijt=bs3pnsodrr3p026j9emh9fc8ph"><button>Cancel</button></a>
+            <button onclick="deleteUser()">Delete</button>
+            <a href="/web-lab1/frontend/pages/user-profile.html"><button>Cancel</button></a>
         </div>
     </div>
     <img src="../resources/images/user-profile-image.png" class="user-profile-icon"/>

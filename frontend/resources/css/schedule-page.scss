@@ -1,0 +1,249 @@
+@import 'color-palette';
+
+html {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  background: url("../images/schedule-background.jpg") 30%/cover no-repeat;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.schedule-wrapper {
+  width: 100%;
+  display: flex;
+  height: 1000px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -30px;
+}
+
+.schedule-info-wrapper {
+  width: 99%;
+  height: 600px;
+  background-color: #f1f1f1;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.schedule-day-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.schedule-day-info {
+  width: 250px;
+  height: 400px;
+  background-color: $light-yellow;
+  border-radius: 20px;
+  border: 1px solid $bold-yellow;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.day-header {
+  font-family: monospace;
+  color: #309085;
+  font-size: 20px;
+}
+
+.divider {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 1px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 100%;
+  button {
+    width: 80px;
+    height: 30px;
+    background: $bold-yellow;
+    border: none;
+    border-radius: 5px;
+    color: $default-white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none !important;
+  }
+}
+
+.days-logo {
+  height: 100px;
+}
+
+h3 p {
+  color: $bold-yellow;
+}
+
+.editor-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #939393;
+  opacity: 0.3;
+}
+
+.editor-form-wrapper {
+  position: absolute;
+  top: 15%;
+  width: 40%;
+  height: 650px;
+  background-color: #ffffff;
+  opacity: 1;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.editor-title {
+  color: #309085;
+  text-align: center;
+  text-decoration: none;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.list-film-wrapper {
+  box-sizing: border-box;
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item-wrapper {
+  width: 100%;
+  height: 70px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: solid 1px $bold-yellow;
+  border-radius: 10px;
+}
+
+
+.list-item-wrapper p {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 700;
+  color: $bold-blue;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.input-time-wrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-time {
+  box-sizing: border-box;
+  margin: 10px 30px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 1px $bold-yellow;
+
+}
+
+.input-time-wrapper p {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 700;
+  color: $bold-blue;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.input-time-wrapper button {
+  width: 80px;
+  height: 30px;
+  background: $bold-yellow;
+  border: none;
+  border-radius: 5px;
+  color: $default-white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 25%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  width: 30px;
+  background: #F4F4F4;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  background: linear-gradient(83.57deg, #ff4601 -13.97%, #fff202 95.44%);
+  border-radius: 32px;
+}

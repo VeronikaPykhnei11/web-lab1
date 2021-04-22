@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <title>Cinema-Service</title>
     <link href="../resources/css/user-profile.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../scripts/requests.js"></script>
+    <script type="text/javascript">
+        window.onload = loadUserInfo;
+    </script>
 </head>
 <body>
     <div class="root">
-        <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk">
-            <img src="../resources/images/logo.png" class="logo"/>
-        </a>
+        <p class="logo-wrapper">
+            <img src="../resources/images/logo.png" onclick="checkIfLoggedLogo()" class="logo"/>
+        </p>
         <div class="user-profile-wrapper">
             <h2>USER INFO</h2>
             <div class="divider"></div>
             <div class="user-info-wrapper">
                 <span>Username:</span>
-                <span>User_name</span>
+                <span id="EditUsername"></span>
             </div>
             <div class="divider"></div>
             <div class="user-info-wrapper">
                 <span style="margin-left: 10px">Email:</span>
-                <span>email@gmail.com</span>
+                <span id="EditEmail"></span>
             </div>
             <div class="divider"></div>
             <div class="user-info-wrapper">
-                <a href="/web-lab1/pages/user-edit-profile.html?_ijt=ncbok3ndtp79ekn4vd1vneb3b9"><button>Edit</button></a>
-                <a href="/web-lab1/pages/user-delete-profile.html?_ijt=9kpnu2ej98qkam2bv2pnrbe7ej"><button>Delete</button></a>
+                <a href="/web-lab1/frontend/pages/user-edit-profile.html"><button>Edit</button></a>
+                <a href="/web-lab1/frontend/pages/user-delete-profile.html"><button>Delete</button></a>
             </div>
         </div>
         <img src="../resources/images/user-profile-image.png" class="user-profile-icon"/>

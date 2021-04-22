@@ -4,28 +4,25 @@
     <meta charset="UTF-8">
     <title>Cinema-Service</title>
     <link href="../resources/css/user-edit-profile.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../scripts/requests.js"></script>
 </head>
 <body>
 <div class="root">
-    <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk">
-        <img src="../resources/images/logo.png" class="logo"/>
-    </a>
+    <p class="logo-wrapper">
+        <img src="../resources/images/logo.png" onclick="checkIfLoggedLogo()" class="logo"/>
+    </p>
     <div class="user-profile-wrapper">
         <h2>USER EDIT</h2>
         <div class="divider"></div>
         <div class="user-info-wrapper">
-            <span>Username:</span>
-            <input placeholder="User_name"/>
-        </div>
-        <div class="divider"></div>
-        <div class="user-info-wrapper">
             <span style="margin-left: 10px; margin-right:20px;">Email:</span>
-            <input placeholder="email@gmail.com"/>
+            <input type="email" placeholder="email" id="EditEmailInput"/>
         </div>
         <div class="divider"></div>
         <div class="user-info-wrapper">
-            <a href="/web-lab1/pages/user-profile.html?_ijt=bs3pnsodrr3p026j9emh9fc8ph"><button>Submit</button></a>
-            <a href="/web-lab1/pages/user-profile.html?_ijt=bs3pnsodrr3p026j9emh9fc8ph"><button>Cancel</button></a>
+            <button onclick="editUser()">Submit</button>
+            <a href="/web-lab1/frontend/pages/user-profile.html"><button>Cancel</button></a>
         </div>
     </div>
     <img src="../resources/images/user-profile-image.png" class="user-profile-icon"/>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema-Service</title>
+    <link href="../resources/css/login-page.css" type="text/css" rel="stylesheet">
+    <script type = "text/javascript" src="../scripts/requests.js"></script>
+</head>
+<body>
+    <div class="root">
+        <a href="/web-lab1/frontend/pages/main-page.html">
+            <img src="../resources/images/logo.png" class="logo"/>
+        </a>
+        <div class="login-logo-wrapper">
+            <img src="../resources/images/login-logo.png" class="login-logo"/>
+        </div>
+        <form onsubmit="event.preventDefault(); loginUser()" class="login-form">
+            <div class="login-title-wrapper">
+                <h2 class="login-title">SIGN IN</h2>
+            </div>
+            <input type="email" placeholder="Email" class="form-input" id="loginEmail" required>
+            <input type="password" placeholder="Password" class="form-input" id="loginPassword" required minlength="8">
+            <button class="submit-button">SIGN IN</button>
+            <div class="form-footer">
+                <p class="forgot-password-wrapper"><a href="/web-lab1/frontend/pages/forgot-password-page.html">Forgot your password?</a></p>
+                <p>Don't have an account?<a href="/web-lab1/frontend/pages/register-page.html">Sign up</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

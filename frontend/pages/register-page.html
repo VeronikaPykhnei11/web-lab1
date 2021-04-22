@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Cinema-Service</title>
     <link href="../resources/css/register-page.css" type="text/css" rel="stylesheet">
+    <script type = "text/javascript" src="../scripts/requests.js"></script>
 </head>
 <body>
     <div class="root">
         <header>
-            <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk">
+            <a href="/web-lab1/frontend/pages/main-page.html">
                 <img src="../resources/images/logo.png" class="logo"/>
             </a>
             <img src="../resources/images/tickets.png" class="tickets-logo"/>
@@ -18,26 +19,26 @@
             <div class="main-image-wrapper">
                 <img src="../resources/images/popcorn.png" class="main-image"/>
             </div>
-            <form action="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk" class="form-wrapper">
+            <form onsubmit="event.preventDefault(); postUser()" class="form-wrapper">
                 <div class="register-form">
                     <div class="form-title">
                         <h1>SIGN UP</h1>
                     </div>
                     <div class="form-content">
                         <div class="form-column">
-                            <input type="text" placeholder="Username" class="form-input" required minlength="15">
-                            <input type="password" placeholder="Password" class="form-input" required minlength="8">
+                            <input type="text" placeholder="Username" id="usernameInput" class="form-input" required minlength="15">
+                            <input type="password" placeholder="Password" id="passwordInput" class="form-input" required minlength="8">
                         </div>
                         <div class="form-column">
-                            <input type="email" placeholder="Email" class="form-input" required>
-                            <input type="password" placeholder="Confirm Password" class="form-input" required minlength="8">
+                            <input type="email" placeholder="Email" id="emailInput" class="form-input" required>
+                            <input type="password" id="confirmInput" placeholder="Confirm Password" class="form-input" required minlength="8">
                         </div>
                     </div>
-                    <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk">
-                        <button class="submit-button" >SIGN UP</button>
+                    <a href="#">
+                        <button class="submit-button">SIGN UP</button>
                     </a>
                     <div class="form-footer">
-                        <p>Already have an account?<a href="/web-lab1/pages/login-page.html?_ijt=pfbtgj47g099u42ngt25n4q574">Sign in</a></p>
+                        <p>Already have an account?<a href="/web-lab1/frontend/pages/login-page.html">Sign in</a></p>
                     </div>
                 </div>
             </form>

@@ -4,69 +4,65 @@
     <meta charset="UTF-8">
     <title>Cinema-Service</title>
     <link href="../resources/css/schedule-page.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../scripts/checkIfLogged.js"></script>
+    <script type="text/javascript" src="../scripts/requests.js"></script>
+    <script type="text/javascript">
+        window.onload = loadScheduleInfo;
+    </script>
 </head>
 <body>
-<div class="root">
-    <a href="/web-lab1/pages/main-page.html?_ijt=fpo1nffa2usc10ftj4vmdboqqk">
-        <img src="../resources/images/light-logo.png" class="logo"/>
-    </a>
+<div class="root" id="schedule-wrapper-root">
+    <p class="logo-wrapper">
+        <img src="../resources/images/logo.png" onclick="checkIfLoggedLogo()" class="logo"/>
+    </p>
     <div class="schedule-wrapper">
         <img src="../resources/images/schedule-logo.png"/>
         <div class="schedule-info-wrapper">
             <img src="../resources/images/days-logo.png" class="days-logo"/>
             <div class="schedule-day-wrapper">
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Monday</h3>
+                    <h3 class="day-header" id="Monday">Monday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Monday')">Edit</button>
                     </div>
                 </div>
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Tuesday</h3>
+                    <h3 class="day-header" id="Tuesday">Tuesday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Tuesday')">Edit</button>
                     </div>
                 </div>
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Wednesday</h3>
+                    <h3 class="day-header" id="Wednesday">Wednesday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Wednesday')">Edit</button>
                     </div>
                 </div>
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Thursday</h3>
+                    <h3 class="day-header" id="Thursday">Thursday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Thursday')">Edit</button>
                     </div>
                 </div>
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Friday</h3>
+                    <h3 class="day-header" id="Friday">Friday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Friday')">Edit</button>
                     </div>
                 </div>
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Saturday</h3>
+                    <h3 class="day-header" id="Saturday">Saturday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Saturday')">Edit</button>
                     </div>
                 </div>
                 <div class="schedule-day-info">
-                    <h3 class="day-header">Sunday</h3>
+                    <h3 class="day-header" id="Sunday">Sunday</h3>
                     <div class="button-wrapper">
-                        <button>Add</button>
-                        <button>Delete</button>
+                        <button onclick="editSchedule('Sunday')">Edit</button>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
